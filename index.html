@@ -26,11 +26,20 @@ a{color:var(--acc)}code{background:var(--bg);padding:1px 5px;border-radius:4px}
 .btn.main{background:var(--g);color:#fff;border:0}
 .btn.sec{background:transparent;color:var(--acc);border:1px solid var(--acc)}
 .warn{color:#f0d29a}
+.card.dev{border-color:var(--acc)}
+.devname{font-size:1.2em;font-weight:700;margin:0 0 6px;color:#fff}
 p.credit{color:var(--muted);font-size:.78em;text-align:center;margin:4px 0 20px}
 </style></head><body>
 <header><h1>MeshCore Tailscale Companion<small data-i="sub"></small></h1>
 <div class="lang"><button type="button" id="b-en" onclick="setLang('en')">EN</button><button type="button" id="b-hr" onclick="setLang('hr')">HR</button></div></header>
 <main>
+
+<div class="card dev">
+<h2 data-i="d_t"></h2>
+<p class="devname">Seeed Studio XIAO ESP32-S3 + Wio-SX1262</p>
+<p class="muted" data-h="d_1"></p>
+<p class="warn" data-h="d_2"></p>
+</div>
 
 <div class="card">
 <h2 data-i="i_t"></h2>
@@ -75,6 +84,9 @@ p.credit{color:var(--muted);font-size:.78em;text-align:center;margin:4px 0 20px}
 <script>
 var REPO='https://github.com/petelash/meshcore-tailscale-companion';
 var T={hr:{sub:"Flasher · v1.18-tsc.0.1 · XIAO ESP32-S3 + Wio-SX1262",
+d_t:"Uređaj",
+d_1:"Seeed Studio <b>XIAO ESP32S3 &amp; Wio-SX1262 Kit</b> (XIAO ESP32-S3 s 8 MB flasha i 8 MB PSRAM-a, s Wio-SX1262 LoRa pločicom).",
+d_2:"⚠️ Samo za ovaj uređaj. Ne flashaj na druge ploče (Heltec, LilyGO T-Beam/T-Deck, RAK, obični XIAO ESP32-S3 bez Wio-SX1262, XIAO nRF52840 …): neće raditi.",
 i_t:"Prva instalacija",
 i_1:"Otvori ovu stranicu u <b>Chromeu ili Edgeu</b> na računalu.",
 i_2:"Spoji XIAO USB kabelom (s podatkovnim linijama).",
@@ -95,6 +107,9 @@ unsup:"Ovaj preglednik ne podržava flashanje preko USB-a. Koristi Chrome ili Ed
 https:"Stranica mora biti otvorena preko HTTPS-a.",
 credit:"© 2026 Marinko Vrbanić · MIT licenca · Neslužbeni projekt, nije povezan s MeshCore projektom ni s Tailscale Inc."},
 en:{sub:"Flasher · v1.18-tsc.0.1 · XIAO ESP32-S3 + Wio-SX1262",
+d_t:"Device",
+d_1:"Seeed Studio <b>XIAO ESP32S3 &amp; Wio-SX1262 Kit</b> (XIAO ESP32-S3 with 8 MB flash and 8 MB PSRAM, with the Wio-SX1262 LoRa board).",
+d_2:"⚠️ For this device only. Do not flash it to other boards (Heltec, LilyGO T-Beam/T-Deck, RAK, a plain XIAO ESP32-S3 without the Wio-SX1262, XIAO nRF52840 …): it will not work.",
 i_t:"First installation",
 i_1:"Open this page in <b>Chrome or Edge</b> on a computer.",
 i_2:"Connect the XIAO with a USB cable (one with data lines).",
