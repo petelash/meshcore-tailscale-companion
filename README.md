@@ -38,7 +38,14 @@ koristiš odakle god. Firmware radi i sa službenim MeshCore appom (TCP na
 - Tvornički reset, uz opciju zadržavanja identiteta čvora
 
 ## Preuzimanje
-Otvori **[Releases](../../releases)** i preuzmi:
+**Flash datoteka (prvo flashanje, adresa `0x0`):**
+[firmware/MeshCore-Tailscale-Companion_v1.18-tsc.0.1_XiaoS3WIO_merged.bin](firmware/MeshCore-Tailscale-Companion_v1.18-tsc.0.1_XiaoS3WIO_merged.bin)
+(otvori i klikni *Download raw file*).
+
+Flashaj je s https://espressif.github.io/esptool-js/ (Chrome/Edge) → Connect → Flash Address `0x0` → Program.
+Treba ti **.bin** datoteka, ne "Source code (zip)" koji GitHub sam dodaje izdanjima.
+
+Sve datoteke su i u **[Releases](../../releases)**:
 - `…_merged.bin`: prvo flashanje od adrese `0x0`
 - `…_ota.bin`: nadogradnja kroz web portal (GitHub nadogradnju uređaj radi sam)
 
