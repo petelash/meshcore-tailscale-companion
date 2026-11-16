@@ -38,12 +38,18 @@ koristiš odakle god. Firmware radi i sa službenim MeshCore appom (TCP na
 - Tvornički reset, uz opciju zadržavanja identiteta čvora
 
 ## Preuzimanje
-**Flash datoteka (prvo flashanje, adresa `0x0`):**
-[firmware/MeshCore-Tailscale-Companion_v1.18-tsc.0.1_XiaoS3WIO_merged.bin](firmware/MeshCore-Tailscale-Companion_v1.18-tsc.0.1_XiaoS3WIO_merged.bin)
-(otvori i klikni *Download raw file*).
+**⬇️ [Preuzmi flash datoteku (.bin)](https://github.com/petelash/meshcore-tailscale-companion/raw/main/firmware/MeshCore-Tailscale-Companion_v1.18-tsc.0.1_XiaoS3WIO_merged.bin)**: prvo flashanje, adresa `0x0`.
 
-Flashaj je s https://espressif.github.io/esptool-js/ (Chrome/Edge) → Connect → Flash Address `0x0` → Program.
-Treba ti **.bin** datoteka, ne "Source code (zip)" koji GitHub sam dodaje izdanjima.
+Flashanje (Chrome ili Edge na računalu):
+1. Otvori https://espressif.github.io/esptool-js/
+2. Spoji XIAO USB kabelom. Ako se port ne pojavi: drži **BOOT**, kratko pritisni **RESET**, pusti BOOT.
+3. **Connect** i odaberi port.
+4. U polje *Flash Address* upiši **`0x0`** i odaberi preuzetu `.bin` datoteku.
+5. **Program**, pričekaj kraj, pa pritisni **RESET**.
+6. Na mobitelu se pojavi WiFi **MC-TS-XXXX** (lozinka `password`). Spoji se i otvori http://192.168.4.1/
+
+Datoteku obavezno preuzmi preko gornjeg linka. Ne koristi "Source code (zip)" ni link na GitHub
+stranicu datoteke: to nije firmware.
 
 Sve datoteke su i u **[Releases](../../releases)**:
 - `…_merged.bin`: prvo flashanje od adrese `0x0`
