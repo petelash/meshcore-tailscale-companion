@@ -7,6 +7,9 @@ prijavljuje na tvoj Tailscale tailnet. MeshCore app na mobitelu se tada spaja na
 > ## 👉 [**Web flasher: instalacija i nadogradnja jednim klikom**](https://petelash.github.io/meshcore-tailscale-companion/)
 > https://petelash.github.io/meshcore-tailscale-companion/ · Chrome ili Edge na računalu, XIAO spojen USB-om
 
+> 📶 **Postavljanje nakon flashanja:** spoji se na WiFi **`MC-TS-XXXX`**, lozinka **`password`**,
+> pa otvori **http://192.168.4.1/** (XXXX = zadnja 4 znaka MAC adrese uređaja).
+
 Sadržaj:
 1. [Što ti treba](#1-što-ti-treba)
 2. [Tailscale auth ključ](#2-tailscale-auth-ključ)

@@ -27,6 +27,8 @@ a{color:var(--acc)}code{background:var(--bg);padding:1px 5px;border-radius:4px}
 .btn.sec{background:transparent;color:var(--acc);border:1px solid var(--acc)}
 .warn{color:#f0d29a}
 .card.dev{border-color:var(--acc)}
+.card.pw{border-color:#6b4d12;background:#2b2210}
+.pwline{font-size:1.1em;margin:0 0 10px}.pwline .big{font-size:1.25em;color:#fff;background:var(--bg);padding:2px 8px;border-radius:6px;font-family:monospace}
 .devname{font-size:1.2em;font-weight:700;margin:0 0 6px;color:#fff}
 p.credit{color:var(--muted);font-size:.78em;text-align:center;margin:4px 0 20px}
 </style></head><body>
@@ -74,8 +76,9 @@ p.credit{color:var(--muted);font-size:.78em;text-align:center;margin:4px 0 20px}
 <p class="muted" data-h="u_3"></p>
 </div>
 
-<div class="card">
+<div class="card pw">
 <h2 data-i="a_t"></h2>
+<p class="pwline"><span data-i="pw_ap"></span> <b>MC-TS-XXXX</b><br><span data-i="pw_pw"></span> <b class="big">password</b></p>
 <p data-h="a_1"></p>
 <p class="muted" data-h="links"></p>
 </div>
@@ -100,7 +103,7 @@ u_1:"Za uređaj na kojem <b>već radi</b> MeshCore Tailscale Companion. Upisuje 
 u_2:"Ako je uređaj dostupan preko mreže, nadogradnju je lakše pokrenuti u web sučelju (Firmware → Provjeri nadogradnju). Ovaj gumb je za nadogradnju preko USB-a, npr. kad uređaj nije na mreži.",
 u_btn:"Nadogradi (zadrži postavke)",
 u_3:"Za prvu instalaciju ili uređaj s drugim firmwareom koristi gumb <b>Instaliraj</b> iznad.",
-a_t:"Nakon instalacije",
+a_t:"Nakon instalacije",pw_ap:"WiFi mreža uređaja:",pw_pw:"Lozinka:",
 a_1:"Na mobitelu se spoji na WiFi <code>MC-TS-XXXX</code> (lozinka <code>password</code>) i otvori <a href=\"http://192.168.4.1/\">http://192.168.4.1/</a>. Upiši WiFi, Tailscale auth ključ, naziv čvora i novu admin lozinku.",
 links:"<a href=\""+REPO+"/blob/main/docs/UPUTE.md\">Upute</a> · <a href=\"https://github.com/petelash/MeshCore-Go\">MeshCore Go</a> · <a href=\""+REPO+"\">GitHub</a>",
 unsup:"Ovaj preglednik ne podržava flashanje preko USB-a. Koristi Chrome ili Edge na računalu.",
@@ -123,7 +126,7 @@ u_1:"For a device that <b>already runs</b> MeshCore Tailscale Companion. Writes 
 u_2:"If the device is reachable over the network, it's easier to update from its web interface (Firmware → Check for update). This button is for updating over USB, e.g. when the device is offline.",
 u_btn:"Update (keep settings)",
 u_3:"For a first installation or a device with another firmware, use the <b>Install</b> button above.",
-a_t:"After installation",
+a_t:"After installation",pw_ap:"Device WiFi network:",pw_pw:"Password:",
 a_1:"On your phone, join the WiFi <code>MC-TS-XXXX</code> (password <code>password</code>) and open <a href=\"http://192.168.4.1/\">http://192.168.4.1/</a>. Enter your WiFi, Tailscale auth key, node name and a new admin password.",
 links:"<a href=\""+REPO+"/blob/main/docs/UPUTE.md\">Guide (Croatian)</a> · <a href=\"https://github.com/petelash/MeshCore-Go\">MeshCore Go</a> · <a href=\""+REPO+"\">GitHub</a>",
 unsup:"This browser can't flash over USB. Use Chrome or Edge on a computer.",

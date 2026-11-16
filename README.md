@@ -5,6 +5,9 @@
 > ### 👉 [Web flasher: instalacija i nadogradnja jednim klikom](https://petelash.github.io/meshcore-tailscale-companion/)
 > https://petelash.github.io/meshcore-tailscale-companion/ (Chrome ili Edge na računalu)
 
+> 📶 **Postavljanje nakon flashanja:** spoji se na WiFi **`MC-TS-XXXX`**, lozinka **`password`**,
+> pa otvori **http://192.168.4.1/** (XXXX = zadnja 4 znaka MAC adrese uređaja).
+
 Firmware za MeshCore companion čvor **Seeed XIAO ESP32-S3 + Wio-SX1262** s ugrađenim
 **Tailscale VPN-om**. Čvor se sam spoji na WiFi, prijavi na tvoj tailnet i dobije
 100.x.x.x adresu. MeshCore aplikacija ga tada vidi s bilo kojeg mjesta (mobilni podaci,
@@ -101,6 +104,8 @@ tailnet/LAN with an admin password), serial CLI, signed over-the-air updates fro
 repository with automatic rollback.
 
 **Web flasher (install / update over USB): https://petelash.github.io/meshcore-tailscale-companion/** (Chrome or Edge on a computer).
+
+📶 **Setup after flashing:** join the WiFi **`MC-TS-XXXX`**, password **`password`**, then open **http://192.168.4.1/**.
 
 Download from **[Releases](../../releases)**: `…_merged.bin` for the first flash at `0x0`,
 `…_ota.bin` for web upload. Full guide (Croatian): [docs/UPUTE.md](docs/UPUTE.md).
