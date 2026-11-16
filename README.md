@@ -53,7 +53,7 @@ Chrome ili Edge na računalu, XIAO spojen USB-om:
 Adrese se postave same. Nadogradnja je moguća i bez USB-a, iz web sučelja uređaja (Firmware → Provjeri nadogradnju).
 
 ## Preuzimanje
-**⬇️ [Preuzmi flash datoteku (.bin)](https://github.com/petelash/meshcore-tailscale-companion/raw/main/firmware/MeshCore-Tailscale-Companion_v1.18-tsc.0.1_XiaoS3WIO_merged.bin)**: prvo flashanje, adresa `0x0`.
+**⬇️ [Preuzmi flash datoteku (.bin)](https://github.com/petelash/meshcore-tailscale-companion/raw/main/firmware/MeshCore-Tailscale-Companion_v1.18-tsc.0.2_XiaoS3WIO_merged.bin)**: prvo flashanje, adresa `0x0`.
 
 Flashanje (Chrome ili Edge na računalu):
 1. Otvori https://espressif.github.io/esptool-js/

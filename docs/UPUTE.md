@@ -65,7 +65,7 @@ Prvi put flashaj **merged** datoteku (bootloader, particije i aplikacija zajedno
 
 **Preko esptoola:**
 ```bash
-esptool.py --chip esp32s3 --baud 921600 write_flash 0x0 MeshCore-Tailscale-Companion_v1.18-tsc.0.1_XiaoS3WIO_merged.bin
+esptool.py --chip esp32s3 --baud 921600 write_flash 0x0 MeshCore-Tailscale-Companion_v1.18-tsc.0.2_XiaoS3WIO_merged.bin
 ```
 
 > Particijska tablica nije ista kao kod standardnog MeshCore companiona ni MeshCore
@@ -95,6 +95,11 @@ U portalu upiši:
 3. **Radio**: odaberi preset regije (za Hrvatsku *EU/UK (Narrow)*). Postavke moraju
    odgovarati ostalim čvorovima u mreži.
 4. **Spremi i restartaj**.
+
+U polju za SSID možeš kliknuti **Skeniraj** i odabrati mrežu s popisa, ili upisati naziv ručno.
+
+Nakon restarta uređaj je dostupan i **po imenu**: kod kuće **http://<naziv>.local/**, preko Tailscalea
+**http://<naziv>/**. Naziv je ime uređaja na tailnetu (npr. naziv čvora "TS test" → `ts-test.local`).
 
 Nakon restarta uređaj ispisuje na serialu (115200) svoju VPN adresu:
 ```
