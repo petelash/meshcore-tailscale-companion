@@ -4,6 +4,9 @@ Firmware za **Seeed XIAO ESP32-S3 + Wio-SX1262**. Companion se spaja na WiFi i
 prijavljuje na tvoj Tailscale tailnet. MeshCore app na mobitelu se tada spaja na
 `100.x.x.x:5000` s bilo kojeg mjesta: kod kuće, na mobilnim podacima ili na tuđem WiFi-ju.
 
+> ## 👉 [**Web flasher: instalacija i nadogradnja jednim klikom**](https://petelash.github.io/meshcore-tailscale-companion/)
+> https://petelash.github.io/meshcore-tailscale-companion/ · Chrome ili Edge na računalu, XIAO spojen USB-om
+
 Sadržaj:
 1. [Što ti treba](#1-što-ti-treba)
 2. [Tailscale auth ključ](#2-tailscale-auth-ključ)
@@ -33,9 +36,24 @@ Sadržaj:
 4. Kopiraj ključ (`tskey-auth-...`). Upisat ćeš ga u portal.
 
 ## 3. Flashanje
+
+### Web flasher (preporučeno)
+> ## 👉 [**Otvori web flasher**](https://petelash.github.io/meshcore-tailscale-companion/)
+> https://petelash.github.io/meshcore-tailscale-companion/ · Chrome ili Edge na računalu
+
+1. Spoji XIAO USB kabelom.
+2. **Prva instalacija:** klikni **Instaliraj**, odaberi port, potvrdi brisanje i pričekaj kraj.
+   **Nadogradnja preko USB-a:** klikni **Nadogradi (zadrži postavke)**. Postavke, Tailscale
+   (ista 100.x adresa), kontakti i identitet ostaju.
+3. Pritisni **RESET** na uređaju.
+
+Adrese se postave same, pa ništa ne trebaš upisivati. Ako se port ne pojavi: drži **BOOT**,
+kratko pritisni **RESET**, pusti BOOT i pokušaj ponovno.
+
+### Ručno (rezerva)
 Prvi put flashaj **merged** datoteku (bootloader, particije i aplikacija zajedno) od adrese `0x0`.
 
-**Preko web preglednika (najlakše, Chrome/Edge):**
+**esptool-js (Chrome/Edge):**
 1. Otvori https://espressif.github.io/esptool-js/
 2. Spoji XIAO preko USB-a. Ako se ne pojavi port: drži **BOOT**, pritisni **RESET**, pusti BOOT.
 3. Baudrate 921600 → **Connect** → odaberi port.
@@ -201,6 +219,13 @@ Uređaj pita GitHub (`petelash/meshcore-tailscale-companion`) za zadnje izdanje.
 beta kanalu gleda i pre-release izdanja. Preuzima `..._ota.bin` preko HTTPS-a i
 provjerava **ECDSA potpis** autora, a datoteku bez ispravnog potpisa odbija. Postavke,
 kontakti, identitet i Tailscale ostaju, a uređaj zadržava istu 100.x adresu.
+
+### Preko USB-a, web flasherom
+[Web flasher](https://petelash.github.io/meshcore-tailscale-companion/) → **Nadogradi (zadrži postavke)**.
+Za uređaj koji nije na mreži. Sve postavke ostaju.
+
+> Za nadogradnju **nemoj** koristiti gumb *Instaliraj* ni merged datoteku: one brišu
+> postavke (Tailscale ključ i adresu, admin lozinku).
 
 ### Ručno, kroz portal
 Portal → **Firmware → Učitaj datoteku firmwarea**, pa odaberi `..._ota.bin`.

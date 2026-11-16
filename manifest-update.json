@@ -1,0 +1,14 @@
+{
+  "name": "MeshCore Tailscale Companion (update, keeps settings)",
+  "version": "v1.18-tsc.0.1",
+  "new_install_prompt_erase": false,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        { "path": "firmware/boot_app0.bin", "offset": 57344 },
+        { "path": "firmware/MeshCore-Tailscale-Companion_v1.18-tsc.0.1_XiaoS3WIO_ota.bin", "offset": 65536 }
+      ]
+    }
+  ]
+}

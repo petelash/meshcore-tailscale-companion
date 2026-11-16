@@ -2,6 +2,9 @@
 
 **Hrvatski** · [English](#english)
 
+> ### 👉 [Web flasher: instalacija i nadogradnja jednim klikom](https://petelash.github.io/meshcore-tailscale-companion/)
+> https://petelash.github.io/meshcore-tailscale-companion/ (Chrome ili Edge na računalu)
+
 Firmware za MeshCore companion čvor **Seeed XIAO ESP32-S3 + Wio-SX1262** s ugrađenim
 **Tailscale VPN-om**. Čvor se sam spoji na WiFi, prijavi na tvoj tailnet i dobije
 100.x.x.x adresu. MeshCore aplikacija ga tada vidi s bilo kojeg mjesta (mobilni podaci,
@@ -37,9 +40,14 @@ koristiš odakle god. Firmware radi i sa službenim MeshCore appom (TCP na
   - automatski povratak na staru verziju ako se nova ne spoji na WiFi u 2 minute
 - Tvornički reset, uz opciju zadržavanja identiteta čvora
 
-## Instalacija jednim klikom
-**👉 https://petelash.github.io/meshcore-tailscale-companion/** (Chrome ili Edge na računalu):
-spoji XIAO USB-om, klikni **Instaliraj** i odaberi port. Adrese se postave same.
+## 👉 Web flasher
+### [**petelash.github.io/meshcore-tailscale-companion**](https://petelash.github.io/meshcore-tailscale-companion/)
+
+Chrome ili Edge na računalu, XIAO spojen USB-om:
+- **Instaliraj**: prva instalacija (briše uređaj)
+- **Nadogradi (zadrži postavke)**: nova verzija preko USB-a, postavke i Tailscale ostaju
+
+Adrese se postave same. Nadogradnja je moguća i bez USB-a, iz web sučelja uređaja (Firmware → Provjeri nadogradnju).
 
 ## Preuzimanje
 **⬇️ [Preuzmi flash datoteku (.bin)](https://github.com/petelash/meshcore-tailscale-companion/raw/main/firmware/MeshCore-Tailscale-Companion_v1.18-tsc.0.1_XiaoS3WIO_merged.bin)**: prvo flashanje, adresa `0x0`.
@@ -91,6 +99,8 @@ MeshCore client with Tailscale built in. Firmware and app are two halves of the 
 Features: bilingual setup portal (access point `MC-TS-XXXX`, password `password`, plus the
 tailnet/LAN with an admin password), serial CLI, signed over-the-air updates from this
 repository with automatic rollback.
+
+**Web flasher (install / update over USB): https://petelash.github.io/meshcore-tailscale-companion/** (Chrome or Edge on a computer).
 
 Download from **[Releases](../../releases)**: `…_merged.bin` for the first flash at `0x0`,
 `…_ota.bin` for web upload. Full guide (Croatian): [docs/UPUTE.md](docs/UPUTE.md).
