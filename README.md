@@ -37,6 +37,10 @@ koristiš odakle god. Firmware radi i sa službenim MeshCore appom (TCP na
   - automatski povratak na staru verziju ako se nova ne spoji na WiFi u 2 minute
 - Tvornički reset, uz opciju zadržavanja identiteta čvora
 
+## Instalacija jednim klikom
+**👉 https://petelash.github.io/meshcore-tailscale-companion/** (Chrome ili Edge na računalu):
+spoji XIAO USB-om, klikni **Instaliraj** i odaberi port. Adrese se postave same.
+
 ## Preuzimanje
 **⬇️ [Preuzmi flash datoteku (.bin)](https://github.com/petelash/meshcore-tailscale-companion/raw/main/firmware/MeshCore-Tailscale-Companion_v1.18-tsc.0.1_XiaoS3WIO_merged.bin)**: prvo flashanje, adresa `0x0`.
 

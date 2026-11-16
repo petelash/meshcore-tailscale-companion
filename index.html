@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MeshCore Tailscale Companion – instalacija</title>
+<script type="module" src="https://unpkg.com/esp-web-tools@10.4.0/dist/web/install-button.js?module"></script>
+<style>
+:root{color-scheme:dark;--g:#0f6e5c;--gd:#0a4a3d;--bg:#0d1513;--card:#16211e;--line:#2b3b37;--fg:#e4eeea;--muted:#93a8a2;--acc:#5fd1b6}
+*{box-sizing:border-box}
+body{margin:0;font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--fg)}
+header{background:var(--g);color:#fff;padding:16px}
+header h1{margin:0;font-size:1.15em}header small{opacity:.85}
+main{max-width:560px;margin:0 auto;padding:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;margin-bottom:14px}
+h2{color:var(--acc);font-size:1em;margin:0 0 10px}
+ol{padding-left:20px;margin:0}li{margin:6px 0}
+p,li{line-height:1.45}.muted{color:var(--muted);font-size:.9em}
+a{color:var(--acc)}code{background:#0d1513;padding:1px 5px;border-radius:4px}
+esp-web-install-button button[slot=activate]{width:100%;padding:14px;background:var(--g);color:#fff;border:0;border-radius:8px;font-size:1.1em;font-weight:700;cursor:pointer}
+.warn{color:#f0d29a}
+</style></head><body>
+<header><h1>MeshCore Tailscale Companion</h1><small>v1.18-tsc.0.1 · Seeed XIAO ESP32-S3 + Wio-SX1262</small></header>
+<main>
+<div class="card">
+<h2>Instalacija firmwarea</h2>
+<ol>
+<li>Otvori ovu stranicu u <b>Chromeu ili Edgeu</b> na računalu.</li>
+<li>Spoji XIAO USB kabelom (s podatkovnim linijama).</li>
+<li>Klikni <b>Instaliraj</b> i odaberi port uređaja.<br>
+<span class="muted">Ako se port ne pojavi: drži <b>BOOT</b>, kratko pritisni <b>RESET</b>, pusti BOOT, pa pokušaj ponovno.</span></li>
+<li>Potvrdi brisanje uređaja i pričekaj kraj (oko 1 minute).</li>
+<li>Pritisni <b>RESET</b> na uređaju.</li>
+</ol>
+<p style="margin-top:16px">
+<esp-web-install-button manifest="manifest.json">
+  <button slot="activate">Instaliraj</button>
+  <span slot="unsupported" class="warn">Ovaj preglednik ne podržava flashanje preko USB-a. Koristi Chrome ili Edge na računalu.</span>
+  <span slot="not-allowed" class="warn">Stranica mora biti otvorena preko HTTPS-a.</span>
+</esp-web-install-button>
+</p>
+</div>
+<div class="card">
+<h2>Nakon instalacije</h2>
+<p>Na mobitelu se spoji na WiFi <code>MC-TS-XXXX</code> (lozinka <code>password</code>) i otvori
+<a href="http://192.168.4.1/">http://192.168.4.1/</a>. Upiši WiFi, Tailscale auth ključ, naziv čvora i novu admin lozinku.</p>
+<p class="muted">Upute: <a href="https://github.com/petelash/meshcore-tailscale-companion/blob/main/docs/UPUTE.md">docs/UPUTE.md</a> ·
+Aplikacija: <a href="https://github.com/petelash/MeshCore-Go">MeshCore Go</a> ·
+<a href="https://github.com/petelash/meshcore-tailscale-companion">GitHub</a></p>
+</div>
+<p class="muted">© 2026 Marinko Vrbanić · MIT licenca · Neslužbeni projekt, nije povezan s MeshCore projektom ni s Tailscale Inc.</p>
+</main></body></html>
