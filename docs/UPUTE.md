@@ -10,6 +10,8 @@ prijavljuje na tvoj Tailscale tailnet. MeshCore app na mobitelu se tada spaja na
 > 📶 **Postavljanje nakon flashanja:** spoji se na WiFi **`MC-TS-XXXX`**, lozinka **`password`**,
 > pa otvori **http://192.168.4.1/** (XXXX = zadnja 4 znaka MAC adrese uređaja).
 
+> 📘 **Upute za početnike (PDF) s MeshCore Go aplikacijom:** [hrvatski](MeshCore-Tailscale-Companion_MeshCore-Go_upute_HR.pdf) · [English](MeshCore-Tailscale-Companion_MeshCore-Go_guide_EN.pdf)
+
 Sadržaj:
 1. [Što ti treba](#1-što-ti-treba)
 2. [Tailscale auth ključ](#2-tailscale-auth-ključ)
@@ -65,7 +67,7 @@ Prvi put flashaj **merged** datoteku (bootloader, particije i aplikacija zajedno
 
 **Preko esptoola:**
 ```bash
-esptool.py --chip esp32s3 --baud 921600 write_flash 0x0 MeshCore-Tailscale-Companion_v1.18-tsc.0.2_XiaoS3WIO_merged.bin
+esptool.py --chip esp32s3 --baud 921600 write_flash 0x0 MeshCore-Tailscale-Companion_v1.18-tsc.0.3_XiaoS3WIO_merged.bin
 ```
 
 > Particijska tablica nije ista kao kod standardnog MeshCore companiona ni MeshCore
@@ -83,7 +85,8 @@ Kad nema WiFi postavki, uređaj sam pali pristupnu točku:
 | Adresa | http://192.168.4.1/ (većina mobitela je otvori sama) |
 
 Portal se pali i:
-- ako je **USER tipka** na Wio pločici držana dok se uređaj pali,
+- ako **držiš USER tipku** na Wio pločici **5 sekundi** dok uređaj radi (pristupna točka tada ostaje
+  uključena do restarta), ili je držiš dok ukopčavaš napajanje,
 - ako se uređaj **3 minute** ne može spojiti na WiFi (npr. promijenila se lozinka).
   Uređaj i dalje pokušava spojiti WiFi, a portal se gasi kad WiFi proradi.
 

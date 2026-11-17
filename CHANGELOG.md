@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.18-tsc.0.3 (2026-11-17)
+- Držanje tipke **USER** na Wio pločici **5 sekundi** dok node radi pali WiFi točku za postavljanje `MC-TS-XXXX` (lozinka `password`). Ostaje uključena do restarta.
+- Ispravak: serijska naredba `portal` više ne gasi pristupnu točku odmah ako je node spojen na WiFi.
+
 ## v1.18-tsc.0.2 (2026-11-17)
 - Web sučelje: gumb **Skeniraj** pokraj SSID-a prikaže WiFi mreže u blizini (jačina signala, zaštita); klik odabere mrežu. Ručni upis i dalje radi.
 - Jednostavna adresa po imenu: **http://<naziv>.local/** kod kuće (mDNS) i **http://<naziv>/** preko Tailscalea (MagicDNS). Naziv je ime uređaja na tailnetu, npr. "TS test" → `ts-test.local`. Isto ime vidi i router.

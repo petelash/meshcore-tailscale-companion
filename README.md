@@ -8,6 +8,9 @@
 > 📶 **Postavljanje nakon flashanja:** spoji se na WiFi **`MC-TS-XXXX`**, lozinka **`password`**,
 > pa otvori **http://192.168.4.1/** (XXXX = zadnja 4 znaka MAC adrese uređaja).
 
+> 📘 **Upute za početnike (PDF):** [hrvatski](docs/MeshCore-Tailscale-Companion_MeshCore-Go_upute_HR.pdf) · [English](docs/MeshCore-Tailscale-Companion_MeshCore-Go_guide_EN.pdf): spajanje nodea s aplikacijom
+> MeshCore Go korak po korak, izrada Tailscale ključa i isključivanje key expiryja.
+
 Firmware za MeshCore companion čvor **Seeed XIAO ESP32-S3 + Wio-SX1262** s ugrađenim
 **Tailscale VPN-om**. Čvor se sam spoji na WiFi, prijavi na tvoj tailnet i dobije
 100.x.x.x adresu. MeshCore aplikacija ga tada vidi s bilo kojeg mjesta (mobilni podaci,
@@ -31,7 +34,7 @@ koristiš odakle god. Firmware radi i sa službenim MeshCore appom (TCP na
 - MeshCore companion (osnova v1.18.0) preko WiFi/TCP-a, port 5000
 - Tailscale u samom čvoru: direktna veza ili DERP relej, automatsko ponovno spajanje
 - Web sučelje (HR/EN):
-  - na pristupnoj točki `MC-TS-XXXX` pri prvom pokretanju, uz USER tipku ili nakon
+  - na pristupnoj točki `MC-TS-XXXX` pri prvom pokretanju, kad držiš USER tipku 5 s ili nakon
     3 minute bez WiFi-ja
   - na Tailscale i lokalnoj adresi, uz admin lozinku
 - Postavke: WiFi, Tailscale, naziv, lokacija, radio preseti, path hash, RX gain,
@@ -53,7 +56,7 @@ Chrome ili Edge na računalu, XIAO spojen USB-om:
 Adrese se postave same. Nadogradnja je moguća i bez USB-a, iz web sučelja uređaja (Firmware → Provjeri nadogradnju).
 
 ## Preuzimanje
-**⬇️ [Preuzmi flash datoteku (.bin)](https://github.com/petelash/meshcore-tailscale-companion/raw/main/firmware/MeshCore-Tailscale-Companion_v1.18-tsc.0.2_XiaoS3WIO_merged.bin)**: prvo flashanje, adresa `0x0`.
+**⬇️ [Preuzmi flash datoteku (.bin)](https://github.com/petelash/meshcore-tailscale-companion/raw/main/firmware/MeshCore-Tailscale-Companion_v1.18-tsc.0.3_XiaoS3WIO_merged.bin)**: prvo flashanje, adresa `0x0`.
 
 Flashanje (Chrome ili Edge na računalu):
 1. Otvori https://espressif.github.io/esptool-js/
@@ -104,6 +107,8 @@ tailnet/LAN with an admin password), serial CLI, signed over-the-air updates fro
 repository with automatic rollback.
 
 **Web flasher (install / update over USB): https://petelash.github.io/meshcore-tailscale-companion/** (Chrome or Edge on a computer).
+
+📘 **Beginner's guide (PDF):** [English](docs/MeshCore-Tailscale-Companion_MeshCore-Go_guide_EN.pdf) · [Hrvatski](docs/MeshCore-Tailscale-Companion_MeshCore-Go_upute_HR.pdf): connecting the node to the MeshCore Go app step by step, creating the Tailscale key and disabling key expiry.
 
 📶 **Setup after flashing:** join the WiFi **`MC-TS-XXXX`**, password **`password`**, then open **http://192.168.4.1/**.
 
