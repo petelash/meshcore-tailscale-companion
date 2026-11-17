@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.18-tsc.0.4 (2026-11-17)
+- WiFi točka za postavljanje upaljena tipkom (5 s) ili naredbom `portal` sama se **gasi nakon 10 minuta** ako nitko nije spojen na nju. Tako stranica za postavljanje, koja na toj mreži ne traži admin lozinku, ne ostaje otvorena. Dok nije postavljen WiFi, točka ostaje uključena.
+
 ## v1.18-tsc.0.3 (2026-11-17)
 - Držanje tipke **USER** na Wio pločici **5 sekundi** dok node radi pali WiFi točku za postavljanje `MC-TS-XXXX` (lozinka `password`). Ostaje uključena do restarta.
 - Ispravak: serijska naredba `portal` više ne gasi pristupnu točku odmah ako je node spojen na WiFi.

@@ -2,14 +2,18 @@
 
 **Hrvatski** · [English](#english)
 
+## 📘 Upute za početnike (PDF) · Beginner's guide (PDF)
+
+| 🇭🇷 Hrvatski | 🇬🇧 English |
+|:---:|:---:|
+| **[⬇️ Preuzmi upute (PDF)](https://github.com/petelash/meshcore-tailscale-companion/raw/main/docs/MeshCore-Tailscale-Companion_MeshCore-Go_upute_HR.pdf)** | **[⬇️ Download the guide (PDF)](https://github.com/petelash/meshcore-tailscale-companion/raw/main/docs/MeshCore-Tailscale-Companion_MeshCore-Go_guide_EN.pdf)** |
+| Spajanje nodea s aplikacijom MeshCore Go korak po korak, izrada Tailscale ključa, isključivanje key expiryja | Connecting the node to the MeshCore Go app step by step, creating the Tailscale key, disabling key expiry |
+
 > ### 👉 [Web flasher: instalacija i nadogradnja jednim klikom](https://petelash.github.io/meshcore-tailscale-companion/)
 > https://petelash.github.io/meshcore-tailscale-companion/ (Chrome ili Edge na računalu)
 
 > 📶 **Postavljanje nakon flashanja:** spoji se na WiFi **`MC-TS-XXXX`**, lozinka **`password`**,
 > pa otvori **http://192.168.4.1/** (XXXX = zadnja 4 znaka MAC adrese uređaja).
-
-> 📘 **Upute za početnike (PDF):** [hrvatski](docs/MeshCore-Tailscale-Companion_MeshCore-Go_upute_HR.pdf) · [English](docs/MeshCore-Tailscale-Companion_MeshCore-Go_guide_EN.pdf): spajanje nodea s aplikacijom
-> MeshCore Go korak po korak, izrada Tailscale ključa i isključivanje key expiryja.
 
 Firmware za MeshCore companion čvor **Seeed XIAO ESP32-S3 + Wio-SX1262** s ugrađenim
 **Tailscale VPN-om**. Čvor se sam spoji na WiFi, prijavi na tvoj tailnet i dobije
@@ -56,7 +60,7 @@ Chrome ili Edge na računalu, XIAO spojen USB-om:
 Adrese se postave same. Nadogradnja je moguća i bez USB-a, iz web sučelja uređaja (Firmware → Provjeri nadogradnju).
 
 ## Preuzimanje
-**⬇️ [Preuzmi flash datoteku (.bin)](https://github.com/petelash/meshcore-tailscale-companion/raw/main/firmware/MeshCore-Tailscale-Companion_v1.18-tsc.0.3_XiaoS3WIO_merged.bin)**: prvo flashanje, adresa `0x0`.
+**⬇️ [Preuzmi flash datoteku (.bin)](https://github.com/petelash/meshcore-tailscale-companion/raw/main/firmware/MeshCore-Tailscale-Companion_v1.18-tsc.0.4_XiaoS3WIO_merged.bin)**: prvo flashanje, adresa `0x0`.
 
 Flashanje (Chrome ili Edge na računalu):
 1. Otvori https://espressif.github.io/esptool-js/

@@ -67,7 +67,7 @@ Prvi put flashaj **merged** datoteku (bootloader, particije i aplikacija zajedno
 
 **Preko esptoola:**
 ```bash
-esptool.py --chip esp32s3 --baud 921600 write_flash 0x0 MeshCore-Tailscale-Companion_v1.18-tsc.0.3_XiaoS3WIO_merged.bin
+esptool.py --chip esp32s3 --baud 921600 write_flash 0x0 MeshCore-Tailscale-Companion_v1.18-tsc.0.4_XiaoS3WIO_merged.bin
 ```
 
 > Particijska tablica nije ista kao kod standardnog MeshCore companiona ni MeshCore
@@ -85,8 +85,8 @@ Kad nema WiFi postavki, uređaj sam pali pristupnu točku:
 | Adresa | http://192.168.4.1/ (većina mobitela je otvori sama) |
 
 Portal se pali i:
-- ako **držiš USER tipku** na Wio pločici **5 sekundi** dok uređaj radi (pristupna točka tada ostaje
-  uključena do restarta), ili je držiš dok ukopčavaš napajanje,
+- ako **držiš USER tipku** na Wio pločici **5 sekundi** dok uređaj radi (pristupna točka se sama
+  gasi nakon 10 minuta ako se nitko ne spoji), ili je držiš dok ukopčavaš napajanje,
 - ako se uređaj **3 minute** ne može spojiti na WiFi (npr. promijenila se lozinka).
   Uređaj i dalje pokušava spojiti WiFi, a portal se gasi kad WiFi proradi.
 

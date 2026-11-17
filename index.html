@@ -27,6 +27,7 @@ a{color:var(--acc)}code{background:var(--bg);padding:1px 5px;border-radius:4px}
 .btn.sec{background:transparent;color:var(--acc);border:1px solid var(--acc)}
 .warn{color:#f0d29a}
 .card.dev{border-color:var(--acc)}
+.card.pdf{border-color:var(--acc);background:#13303a;font-size:1.05em}.card.pdf a{font-weight:700}
 .card.pw{border-color:#6b4d12;background:#2b2210}
 .pwline{font-size:1.1em;margin:0 0 10px}.pwline .big{font-size:1.25em;color:#fff;background:var(--bg);padding:2px 8px;border-radius:6px;font-family:monospace}
 .devname{font-size:1.2em;font-weight:700;margin:0 0 6px;color:#fff}
@@ -42,6 +43,8 @@ p.credit{color:var(--muted);font-size:.78em;text-align:center;margin:4px 0 20px}
 <p class="muted" data-h="d_1"></p>
 <p class="warn" data-h="d_2"></p>
 </div>
+
+<div class="card pdf"><p data-h="pdf" style="margin:0"></p></div>
 
 <div class="card">
 <h2 data-i="i_t"></h2>
@@ -86,8 +89,8 @@ p.credit{color:var(--muted);font-size:.78em;text-align:center;margin:4px 0 20px}
 </main>
 <script>
 var REPO='https://github.com/petelash/meshcore-tailscale-companion';
-var T={hr:{sub:"Flasher · v1.18-tsc.0.3 · XIAO ESP32-S3 + Wio-SX1262",
-d_t:"Uređaj",
+var T={hr:{sub:"Flasher · v1.18-tsc.0.4 · XIAO ESP32-S3 + Wio-SX1262",
+d_t:"Uređaj",pdf:"📘 <b>Upute za početnike (PDF):</b> <a href=\"docs/MeshCore-Tailscale-Companion_MeshCore-Go_upute_HR.pdf\">preuzmi upute</a> · <a href=\"docs/MeshCore-Tailscale-Companion_MeshCore-Go_guide_EN.pdf\">English</a><br><span class=\"muted\">Spajanje nodea s aplikacijom MeshCore Go, Tailscale ključ, key expiry.</span>",
 d_1:"Seeed Studio <b>XIAO ESP32S3 &amp; Wio-SX1262 Kit</b> (XIAO ESP32-S3 s 8 MB flasha i 8 MB PSRAM-a, s Wio-SX1262 LoRa pločicom).",
 d_2:"⚠️ Samo za ovaj uređaj. Ne flashaj na druge ploče (Heltec, LilyGO T-Beam/T-Deck, RAK, obični XIAO ESP32-S3 bez Wio-SX1262, XIAO nRF52840 …): neće raditi.",
 i_t:"Prva instalacija",
@@ -109,8 +112,8 @@ links:"📘 <b><a href=\"docs/MeshCore-Tailscale-Companion_MeshCore-Go_upute_HR.
 unsup:"Ovaj preglednik ne podržava flashanje preko USB-a. Koristi Chrome ili Edge na računalu.",
 https:"Stranica mora biti otvorena preko HTTPS-a.",
 credit:"© 2026 Marinko Vrbanić · MIT licenca · Neslužbeni projekt, nije povezan s MeshCore projektom ni s Tailscale Inc."},
-en:{sub:"Flasher · v1.18-tsc.0.3 · XIAO ESP32-S3 + Wio-SX1262",
-d_t:"Device",
+en:{sub:"Flasher · v1.18-tsc.0.4 · XIAO ESP32-S3 + Wio-SX1262",
+d_t:"Device",pdf:"📘 <b>Beginner's guide (PDF):</b> <a href=\"docs/MeshCore-Tailscale-Companion_MeshCore-Go_guide_EN.pdf\">download the guide</a> · <a href=\"docs/MeshCore-Tailscale-Companion_MeshCore-Go_upute_HR.pdf\">Hrvatski</a><br><span class=\"muted\">Connecting the node to the MeshCore Go app, Tailscale key, key expiry.</span>",
 d_1:"Seeed Studio <b>XIAO ESP32S3 &amp; Wio-SX1262 Kit</b> (XIAO ESP32-S3 with 8 MB flash and 8 MB PSRAM, with the Wio-SX1262 LoRa board).",
 d_2:"⚠️ For this device only. Do not flash it to other boards (Heltec, LilyGO T-Beam/T-Deck, RAK, a plain XIAO ESP32-S3 without the Wio-SX1262, XIAO nRF52840 …): it will not work.",
 i_t:"First installation",
