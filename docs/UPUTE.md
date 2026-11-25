@@ -10,7 +10,7 @@ prijavljuje na tvoj Tailscale tailnet. MeshCore app na mobitelu se tada spaja na
 > 📶 **Postavljanje nakon flashanja:** spoji se na WiFi **`MC-TS-XXXX`**, lozinka **`password`**,
 > pa otvori **http://192.168.4.1/** (XXXX = zadnja 4 znaka MAC adrese uređaja).
 
-> 📘 **Upute za početnike (PDF) s MeshCore Go aplikacijom:** [hrvatski](MeshCore-Tailscale-Companion_MeshCore-Go_upute_HR.pdf) · [English](MeshCore-Tailscale-Companion_MeshCore-Go_guide_EN.pdf)
+> 📘 **Upute za početnike (PDF) s MeshOne Go aplikacijom:** [hrvatski](MeshCore-Tailscale-Companion_MeshOne-Go_upute_HR.pdf) · [English](MeshCore-Tailscale-Companion_MeshOne-Go_guide_EN.pdf)
 
 Sadržaj:
 1. [Što ti treba](#1-što-ti-treba)
@@ -130,7 +130,7 @@ Prijava: korisnik `admin`, lozinka je admin lozinka. Na SoftAP-u se ne traži pr
 Bilo koji od ovih načina:
 - **Tailscale admin konzola** → https://login.tailscale.com/admin/machines: uređaj je
   na popisu pod nazivom s tailneta, a uz njega piše adresa `100.x.x.x`.
-- **Tailscale app ili MeshCore Go na mobitelu**: popis uređaja na tailnetu.
+- **Tailscale app ili MeshOne Go na mobitelu**: popis uređaja na tailnetu.
 - **Na računalu s Tailscaleom**: `tailscale status` (ili `tailscale ip <naziv-uređaja>`).
 - **Serial** (USB, 115200): pri spajanju se ispiše
   `Tailscale: connected, VPN IP 100.x.x.x`, a naredba `status` je ispiše bilo kada.
@@ -141,10 +141,10 @@ Bilo koji od ovih načina:
 Adresa ostaje ista kroz restarte i OTA nadogradnje. Mijenja se samo nakon
 `ts logout` ili tvorničkog reseta, jer uređaj tada postaje novi čvor na tailnetu.
 
-### Preporučeno: MeshCore Go
-**[MeshCore Go](https://github.com/petelash/MeshCore-Go)** je Android MeshCore aplikacija
+### Preporučeno: MeshOne Go
+**[MeshOne Go](https://github.com/petelash/MeshOne-Go)** je Android MeshCore aplikacija
 s ugrađenim Tailscaleom, napravljena kao par ovom firmwareu. Zaseban Tailscale app ne
-treba: prijaviš se na tailnet u MeshCore Go i dodaš companion kao WiFi/TCP čvor na
+treba: prijaviš se na tailnet u MeshOne Go i dodaš companion kao WiFi/TCP čvor na
 `100.x.x.x:5000`.
 
 ### Službeni MeshCore app

@@ -6,8 +6,8 @@
 
 | 🇭🇷 Hrvatski | 🇬🇧 English |
 |:---:|:---:|
-| **[⬇️ Preuzmi upute (PDF)](https://github.com/petelash/meshcore-tailscale-companion/raw/main/docs/MeshCore-Tailscale-Companion_MeshCore-Go_upute_HR.pdf)** | **[⬇️ Download the guide (PDF)](https://github.com/petelash/meshcore-tailscale-companion/raw/main/docs/MeshCore-Tailscale-Companion_MeshCore-Go_guide_EN.pdf)** |
-| Spajanje nodea s aplikacijom MeshCore Go korak po korak, izrada Tailscale ključa, isključivanje key expiryja | Connecting the node to the MeshCore Go app step by step, creating the Tailscale key, disabling key expiry |
+| **[⬇️ Preuzmi upute (PDF)](https://github.com/petelash/meshcore-tailscale-companion/raw/main/docs/MeshCore-Tailscale-Companion_MeshOne-Go_upute_HR.pdf)** | **[⬇️ Download the guide (PDF)](https://github.com/petelash/meshcore-tailscale-companion/raw/main/docs/MeshCore-Tailscale-Companion_MeshOne-Go_guide_EN.pdf)** |
+| Spajanje nodea s aplikacijom MeshOne Go korak po korak, izrada Tailscale ključa, isključivanje key expiryja | Connecting the node to the MeshOne Go app step by step, creating the Tailscale key, disabling key expiry |
 
 > ### 👉 [Web flasher: instalacija i nadogradnja jednim klikom](https://petelash.github.io/meshcore-tailscale-companion/)
 > https://petelash.github.io/meshcore-tailscale-companion/ (Chrome ili Edge na računalu)
@@ -20,17 +20,17 @@ Firmware za MeshCore companion čvor **Seeed XIAO ESP32-S3 + Wio-SX1262** s ugra
 100.x.x.x adresu. MeshCore aplikacija ga tada vidi s bilo kojeg mjesta (mobilni podaci,
 tuđi WiFi), bez Raspberry Pi-ja, subnet routera, otvaranja portova i javne IP adrese.
 
-## Preporučena aplikacija: MeshCore Go
-Firmware i Android aplikacija **[MeshCore Go](https://github.com/petelash/MeshCore-Go)**
+## Preporučena aplikacija: MeshOne Go
+Firmware i Android aplikacija **[MeshOne Go](https://github.com/petelash/MeshOne-Go)**
 su dva dijela istog projekta i rade najbolje zajedno.
 
-- **MeshCore Go** je potpuna MeshCore aplikacija (kanali, poruke, karta, upravljanje
+- **MeshOne Go** je potpuna MeshCore aplikacija (kanali, poruke, karta, upravljanje
   repeaterima) s **ugrađenim Tailscale VPN-om**, pa na mobitelu ne treba zaseban
   Tailscale app.
 - **Ovaj firmware** stavlja Tailscale u sam companion čvor, pa kod kuće više ne treba
   nikakvo dodatno računalo: dovoljni su čvor, WiFi i napajanje.
 
-Čvor ostaje kod kuće na mjestu gdje antena najbolje radi, a ti ga preko MeshCore Go
+Čvor ostaje kod kuće na mjestu gdje antena najbolje radi, a ti ga preko MeshOne Go
 koristiš odakle god. Firmware radi i sa službenim MeshCore appom (TCP na
 `100.x.x.x:5000`, uz Tailscale app na mobitelu).
 
@@ -103,7 +103,7 @@ Firmware for the MeshCore companion node **Seeed XIAO ESP32-S3 + Wio-SX1262** wi
 app reaches it from anywhere (`100.x.x.x:5000`), with no subnet router, port forwarding
 or public IP.
 
-Recommended app: **[MeshCore Go](https://github.com/petelash/MeshCore-Go)**, a full Android
+Recommended app: **[MeshOne Go](https://github.com/petelash/MeshOne-Go)**, a full Android
 MeshCore client with Tailscale built in. Firmware and app are two halves of the same project.
 
 Features: bilingual setup portal (access point `MC-TS-XXXX`, password `password`, plus the
@@ -112,7 +112,7 @@ repository with automatic rollback.
 
 **Web flasher (install / update over USB): https://petelash.github.io/meshcore-tailscale-companion/** (Chrome or Edge on a computer).
 
-📘 **Beginner's guide (PDF):** [English](docs/MeshCore-Tailscale-Companion_MeshCore-Go_guide_EN.pdf) · [Hrvatski](docs/MeshCore-Tailscale-Companion_MeshCore-Go_upute_HR.pdf): connecting the node to the MeshCore Go app step by step, creating the Tailscale key and disabling key expiry.
+📘 **Beginner's guide (PDF):** [English](docs/MeshCore-Tailscale-Companion_MeshOne-Go_guide_EN.pdf) · [Hrvatski](docs/MeshCore-Tailscale-Companion_MeshOne-Go_upute_HR.pdf): connecting the node to the MeshOne Go app step by step, creating the Tailscale key and disabling key expiry.
 
 📶 **Setup after flashing:** join the WiFi **`MC-TS-XXXX`**, password **`password`**, then open **http://192.168.4.1/**.
 
